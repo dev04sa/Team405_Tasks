@@ -47,7 +47,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 1. Fork the repository.
 2. Create a new branch for your work: `git checkout -b branch-name`.
-3. create a folder with <your-name> and create files same as provided in sample folder with name Dev.
+3. create a folder with your-name with <your-name> and create files same as provided in sample folder with name Dev.
 3. Commit your changes: `git commit -m 'Add some feature'`.
 4. Push to the branch: `git push origin branch-name`.
 5. Submit a pull request.
