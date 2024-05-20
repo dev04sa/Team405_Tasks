@@ -7,18 +7,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-     <h1 class="text-center text-3xl font-bold mt-[20px]"> Todo Task</h1>
-     <div class="flex flex-row justify-center mt-6 ">
+     <h1 class="text-center text-3xl  font-bold mt-[20px]"> Todo Task</h1>
+     <div class="flex sm:flex-row sm:justify-center flex-col sm:mt-6  ">
       
-        <input type="text" class="px-4 py-2 border-solid border-2 rounded-md border-gray-700 todoInput " placeholder="Enter Todo here">
-        <input type="date" name="date" class="px-3 py-2 border-solid border-2 rounded-md border-gray-700 mx-2 todoDate" >
-        <button class="p-2 bg-green-400 rounded-md  px-3 font-semibold " onclick="addTodo()">Add </button>
+        <input type="text" class="px-4 py-2 border-solid border-2 rounded-md border-gray-700 todoInput sm:mx-0 mx-2 " placeholder="Enter Todo here">
+        <input type="date" name="date" class="px-3 py-2 border-solid border-2 rounded-md border-gray-700 sm:mx-2 sm:m-0 m-2 todoDate" >
+        <button class="p-2 bg-green-400 rounded-md  px-3 font-semibold sm:mx:0 sm:mb-0 sm:mx-0 mb-2 mx-2  " onclick="addTodo()">Add </button>
    
      </div>
      
 
      <div class="addedTodos"></div>
-    <div class="updateTodo h-[100px]"> </div>
+    <div class="updateTodo h-[100px] w-full"> </div>
 
 
     
