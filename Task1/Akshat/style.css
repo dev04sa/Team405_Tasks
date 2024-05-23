@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container,.input{
+    border: 2px solid black;
+}
+.output-box{
+    border: 5px solid red;
+}
+.button-style1{
+    color: red;
+    font-weight: 700;
+    float: right;
+    margin-right: 20px;
+}
+.button-style2{
+    color: yellowgreen;
+    font-weight: 700;
+    float: right;
+    margin-right: 20px;
+}
+.list-style{
+    border-width: 3px;
+    border-style: groove;
+    border-color: rgb(233, 229, 229);
+    width: 500px;
+    margin-left: 30px;
+    margin-top: 15px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 12px;
+}
+@media (max-width:500px){
+    .input{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .list-style{
+        width: 300px;
+        margin-left: 0;
+        margin: auto;
+    }
+}
