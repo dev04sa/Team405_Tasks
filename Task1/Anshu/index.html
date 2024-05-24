@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo</title>
+</head>
+
+<body>
+    <nav class="bg-indigo-300 flex justify-between items-center px-4 md:px-5 w-full h-16">
+        <div class="font-bold text-2xl text-indigo-800">
+            <a href="#">Anshu</a>
+        </div>
+        <ul class="hidden md:flex gap-5 font-semibold">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">About</li>
+            <li class="cursor-pointer">Contact</li>
+        </ul>
+        <div class="hidden md:block bg-indigo-700 text-white rounded p-2 font-bold cursor-pointer">Login/Signup</div>
+        <div class="md:hidden">
+            <a href="#">&#8801</a>
+        </div>
+    </nav>
+    <div class="container my-24 flex flex-col gap-2">
+        <h1 class="font-bold text-2xl text-red-600 text-center">To-Do List</h1>
+        <div class="flex justify-center">
+            <input class="w-1/2 rounded p-3" type="text" id="input" placeholder="Write Todo...">
+            <button id="add-button" class="rounded-lg bg-green-600 text-white px-2 py-1">Add</button>
+        </div>
+        <ul id="list">
+
+        </ul>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
