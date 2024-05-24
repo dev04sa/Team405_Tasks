@@ -1,12 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.container,.input{
+/* .container,.input{
     border: 2px solid black;
 }
 .output-box{
     border: 5px solid red;
-}
+} */
 .button-style1{
     color: red;
     font-weight: 700;
