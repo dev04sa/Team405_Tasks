@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> sandeep by To-Do project</title>
+</head>
+
+<body>
+    
+    <div class="container my-24 flex flex-col gap-2">
+        <h1 class="font-bold text-2xl text-blue-500 text-center">To-Do List</h1>
+        <div class="flex justify-center">
+            <input class="w-1/2 rounded p-3" type="text" id="input" placeholder="Write some Todo...">
+            <button onclick="addTask()" id="add-button" class="rounded-lg bg-green-600 text-white font-bold px-2 py-1">Add</button>
+        </div>
+        <ul id="list"></ul>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
