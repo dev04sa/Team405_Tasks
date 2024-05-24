@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto p-10 ">
+        <p class="text-2xl font-bold mb-5">Todo List</p>
+        <div class="input-div mb-4">
+            <input type="text" id="input" placeholder="Add a Todo" class = "mr-2 p-2 border-2 ">
+            <button type="submit" id="btn" class = "text-white bg-blue-600 px-4 py-5">Add</button>
+        </div>
+        <div class="todo-list">
+            <ul id="list" class = "list disc pl-7"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
