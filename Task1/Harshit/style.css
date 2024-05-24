@@ -3,13 +3,17 @@ body {
     margin: 10 auto;
     
   }
-  h1{
+  p{
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
   }
   #add-todo{
     display: flex;
     gap: 1rem;
-  }
+    width: 50%;
+   margin: 0 auto;
+  } 
   
   #todo-list {
     list-style: none;
@@ -18,12 +22,15 @@ body {
   }
   
   #todo-list li {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
+    margin:2rem auto;
+    padding: 10px 2rem;
+    border: 1px solid #333232;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
+    border-radius: .5rem;
+    width: 46% ;
+    
   }
   
   #todo-list li.completed {
@@ -63,4 +70,32 @@ body {
   .remo{
     color: rgb(204, 38, 38);
   }
-  
+  @media (max-width: 991px){
+    body{
+      margin: 0 auto ;
+    }
+    p{
+      width: 100%;
+      font-size: 3.5rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    #add-todo{
+        width: 80%;
+       
+    }
+    #todo-input{
+      font-size: 2rem;
+    }
+    #add-todo button{
+      font-size: 2rem;
+    }
+    #todo-list li{
+      width: 74%;
+      font-size: 2rem;
+    }
+    button{
+      font-size: 2rem;
+    }
+    
+  }
