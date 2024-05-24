@@ -89,16 +89,14 @@ function addTask(){
       div.style.cssText = `
           display:flex;
           gap:2rem;
-          padding:0.5rem;
           color:red;
+        padding:0.5rem;
           `;
-  
-      div.appendChild(editButton);
-      div.appendChild(deleteButton);
-  
-      li.appendChild(div);
+
+        li.appendChild(div); 
+        div.appendChild(deleteButton);
+        div.appendChild(editButton);
     });
-  
-    li.appendChild(input);
-    li.appendChild(saveButton);
+      li.appendChild(saveButton);
+      li.appendChild(input);
     }
