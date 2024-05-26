@@ -1,0 +1,135 @@
+@media(width>=395px){
+
+
+    body{
+        background-color:azure;
+    }
+    
+    #todo,#text{
+       text-align: center;
+       /* height: 50px;
+       width: 60px; */
+    }
+    #input{
+         margin-top: 20px;
+        height: 30px;
+        width: 300px;
+        font-size: 18px;
+    }
+    #add{
+        height: 30px;
+        width: 80px;
+        margin-left: 20px;
+        background-color: rgb(16, 148, 16);
+        border-radius: 15px;
+        color: whitesmoke;
+        font-weight: bold;
+        border: none;
+    }
+    
+    .text ul{
+        text-align: center;
+        position: relative;
+         height: 36px;
+        font-size: 20px;
+        border: 1px solid rgb(162, 161, 161);
+        width: 100vw;
+        /* margin-left: 600px; */
+       
+        /* background-color: rgb(220, 220, 220); */
+       
+       
+        
+       
+    }
+    
+    #edit,#save{
+        margin-left: 50px;
+        height: 25px;
+        width: 80px;
+        margin-left: 80px;
+        margin-top: 4px;
+        background-color: rgb(16, 148, 16);
+        color: whitesmoke;
+        font-weight: bold;
+        border: none;
+        border-radius: 15px;
+    }
+    #delete{
+        height: 25px;
+        width: 80px;
+        margin-right: 0px;
+        background-color: rgb(224, 6, 6);
+        color: whitesmoke;
+        font-weight: bold;
+        border: none;
+        border-radius: 15px;
+    }
+    body{
+        transform: scale(1.15);
+    }
+    }
+    
+    
+     @media(width<395px){
+        .container{
+            height: 100px;
+        }
+        #todo,#text{
+            text-align: center;
+            
+         }
+         #input{
+              margin-top: 20px;
+             height: 30px;
+             width: 300px;
+             font-size: 18px;
+         }
+        .text ul{
+           padding-left: 0px;
+           margin-left: 30px;
+           
+             height: 36px;
+            font-size: 15px;
+            border: 1px solid rgb(162, 161, 161);
+            width: 320px;
+            
+        }
+        #add{
+            height: 30px;
+            width: 80px;
+            margin-left: 20px;
+            background-color: rgb(16, 148, 16);
+            border-radius: 15px;
+            color: whitesmoke;
+            font-weight: bold;
+            border: none;
+        }
+            /* background-color: rgb(220, 220, 220); */
+            #edit,#save{
+                margin-left: 50px;
+                height: 25px;
+                width: 80px;
+                margin-left: 80px;
+                margin-top: 4px;
+                background-color: rgb(16, 148, 16);
+                color: whitesmoke;
+                font-weight: bold;
+                border: none;
+                border-radius: 15px;
+            }
+            #delete{
+                height: 25px;
+                width: 80px;
+                margin-right: 0px;
+                background-color: rgb(224, 6, 6);
+                color: whitesmoke;
+                font-weight: bold;
+                border: none;
+                border-radius: 15px;
+            }
+            
+           
+        }
+    
+    
