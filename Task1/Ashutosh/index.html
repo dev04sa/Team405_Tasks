@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		Ashutosh
+	</title> 
+	<style> 
+		body { 
+			margin: 4rem; 
+		} 
+
+		#formContainer { 
+			margin-bottom: 20px; 
+		} 
+
+		label { 
+			display: block; 
+			margin-top: 10px; 
+		} 
+
+		input
+		 { 
+			width: 600px; 
+			padding: 12px; 
+			margin-top: 8px; 
+            margin-bottom: 8px;		
+            border: 1px solid #ccc; 
+			border-radius: 4px;
+            background-color: whitesmoke; 
+		} 
+
+		button { 
+			margin: 10px; 
+			padding: 8px 16px; 
+			background-color: #4CAF50; 
+			color: #fff; 
+			border: none; 
+			border-radius: 4px; 
+			cursor: pointer;
+           
+		} 
+
+		button:hover { 
+			background-color: #45a049; 
+		} 
+
+		
+        table { 
+			border-collapse: collapse; 
+			margin-bottom: 20px; 
+			width: 70%; 
+            margin: 0 auto;
+           
+
+		} 
+        #formContainer{
+           text-align: center;
+          
+        }
+
+        input{
+            
+            background-color: whitesmoke;
+        }
+
+        tr{
+            border: 1px solid #ddd; 
+			padding: 8px; 
+			text-align: left; 
+           
+        }
+
+		
+        th, 
+		td { 
+			border: 1px solid #ddd; 
+			padding: 8px; 
+			text-align: left; 
+            text-align: center;
+            font-size: large;
+            font: bold;
+		} 
+
+        .headings{
+            text-align: center;
+            color: black;
+            font: bold;
+        }
+	</style> 
+</head> 
+
+<body> 
+	<h1  class="headings"> 
+		MY DO TO LIST.....
+	</h1> 
+	 
+
+	<div id="formContainer"> 
+		<label for="nameInput"> 
+			
+		</label> 
+		<input type="text" class="inputin"
+			id="nameInput"
+			placeholder="Add a new to do.... "> 
+		
+		<button onclick="addData()"> 
+			Add 
+		</button> 
+	</div> 
+	<table id="outputTable"> 
+		
+			
+			
+		
+	</table> 
+
+    <script src="index.js"></script>
+	 
+</body> 
+
+</html>
