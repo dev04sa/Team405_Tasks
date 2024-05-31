@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 font-poppins">
+     <h1 class="text-center text-zinc-300 text-3xl  font-bold mt-[50px]  " > MY TODO LIST</h1>
+     <div class="flex flex-col sm:flex-row justify-center mt-6">
+      
+        <input type="text" class="userinput w-[400px] h-[30px] mx-4 mt-6 rounded-2xl text-zinc-100 border-zinc-600 text-center  bg-zinc-500
+         " placeholder="Enter your work here...">
+         <input type="button" class="sm:w-[100px]  mx-4 bg-blue-600 mb-11 h-[30px] w-[400px]   mt-6 rounded-2xl text-zinc-300 border-zinc-600 text-center " value="Create" onclick="maketodo()">
+   
+     </div>
+     
+
+     <div class="addedTodos"></div>
+    <div class="updateTodo h-[100px] w-full"> </div>
+
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>
