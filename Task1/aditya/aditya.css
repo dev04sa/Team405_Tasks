@@ -1,0 +1,64 @@
+body{
+    background-color: #b8b8ff;
+
+}
+#buttonx{
+
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+
+
+    background-color: inherit;
+}
+#todo{
+    border-color: black;
+    border-radius: 10px;
+    outline: none;
+    padding: 2px;
+    text-align: center;
+    width: fit-content;
+    background-color: #f8f7ff;
+}
+
+#buttonx:hover{
+    color: #ffeedd;
+    transform: scale(110%);
+
+
+}
+.todolist{
+    text-align: center;
+
+}
+.tododiv{
+    padding: 2px;
+
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.edit{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1px;
+    border: none;
+    background-color: inherit;
+
+}
+
+.delete{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1px;
+    border: none;
+    background-color: inherit;
+    color: red;
+}
+.strikethr{
+    text-decoration: line-through;
+    opacity: 50%;
+}
+p{
+    margin: 5%;
+}
