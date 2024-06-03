@@ -20,6 +20,8 @@ This project is a simple and elegant image gallery built using React. The images
 ![WhatsApp Image 2024-06-01 at 15 38 49_0dc61b7f](https://github.com/dev04sa/Team405_Tasks/assets/129666293/544d954f-3879-438b-b11f-7035579a322b)
 ![WhatsApp Image 2024-06-01 at 15 37 55_30a206f3](https://github.com/dev04sa/Team405_Tasks/assets/129666293/0387f4e5-207a-4d52-8ac6-9609dba712f3)
 
+https://github.com/dev04sa/Team405_Tasks/blob/main/Task2/Divyansh/Image_Gallery/src/assets/recording-2024-06-01-15-34-22.mp4
+
 
 
 ## Setup
