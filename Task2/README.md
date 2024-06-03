@@ -35,6 +35,7 @@ cd Task2
 
 
 4. Initialize React project using vite
+
 ```bash
 npm create vite@latest
 ```
@@ -42,11 +43,13 @@ npm create vite@latest
 5. write project name and select React
 
 6. cd to project directory and run
+
 ```bash
 npm i
 ```
 
 7. check project by
+
 ```bash
 npm run dev
 ```
