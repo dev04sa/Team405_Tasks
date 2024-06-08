@@ -19,30 +19,43 @@ function Result() {
   }
   //if new text is searched make the page number 1
   useEffect(()=>{
-    if(fText!==""){
-      setPageNum(1)
-    }
-    
-  },[fText])
-  useEffect(()=>{
-    if(pageNum==0){
-      return
-    }else{
+    if(fText==="")return
+    else{
+      setPageNum(1);
+      
       (async()=>{
-        try{console.log("fetching",fText,"Page",pageNum)
-          const response=await fetch(`https://api.unsplash.com/search/photos?query=${fText}&page=${pageNum}&per_page=30&client_id=${client_api}`)
-          var pictures=await response.json()
-          setPhotos(pictures);
-          console.log("Retrieved images successfully")
-        }catch(err){
-          console.log("An error occured")
-        }
+              try{console.log("fetching",fText,"Page",pageNum)
+                const response=await fetch(`https://api.unsplash.com/search/photos?query=${fText}&page=${pageNum}&per_page=30&client_id=${client_api}`)
+                var pictures=await response.json()
+                setPhotos(pictures);
+                console.log("Retrieved images successfully")
+              }catch(err){
+                console.log("An error occured")
+              }
+              
         
-  
-      })();
+            })();
     }
-    
-  },[pageNum])
+  },[fText])
+
+  //if pageNum is changed fetch the new page
+  useEffect(()=>{
+    if(fText==="")return
+  
+      (async()=>{
+              try{console.log("fetching",fText,"Page",pageNum)
+                const response=await fetch(`https://api.unsplash.com/search/photos?query=${fText}&page=${pageNum}&per_page=30&client_id=${client_api}`)
+                var pictures=await response.json()
+                setPhotos(pictures);
+                console.log("Retrieved images successfully")
+              }catch(err){
+                console.log("An error occured")
+              }
+              
+        
+            })();
+    }
+  ,[pageNum])
   
   return (
     <section>
