@@ -56,11 +56,11 @@ import Spinner from "./components/Spinner";
       <h2>search your item here bro 🔎....</h2>
     </div>
 
-    <div className="flex flex-row items-center  ml-[28rem] gap-2 m-[2rem]">
+    <div className="flex justify-center items-center gap-2 m-[2rem] search_bar">
 
       <div className=" ">
         <input type="search" placeholder="What u want to search SIR 🔎..."
-        ref={searchInput} className="w-[500px] p-4 rounded-lg text-xl " ></input>
+        ref={searchInput} className="w-[500px] p-4 rounded-lg text-xl search_box " ></input>
       </div>
 
       <div>
@@ -68,7 +68,7 @@ import Spinner from "./components/Spinner";
       </div>
     </div>
 
-    <div className="flex flex-row justify-around mt-5 buttons">
+    <div className="className="grid grid-cols-10 grid-rows-1 gap-3 mt-5 buttons buttons "">
 
       <button onClick={() =>searchHandler('Flower')}
         className="bg-blue-400 font-bold text-2xl text-white rounded-md  p-3 ">
