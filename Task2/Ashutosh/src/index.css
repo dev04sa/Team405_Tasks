@@ -30,6 +30,39 @@
     90%,
     100% {transform: translate(0) rotate(calc(var(--s,1)*180deg))}
   }
+@media (max-width:720px) {
+
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    .image_box{
+      display: grid;
+      grid-template-columns: repeat(2 , 1fr);
+      margin-left: 4rem;
+      
+    }
+
+    .image{
+      width: 200px;
+      height: 200px;
+    }
+
+    .search_bar{
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader{
+     margin-left: 24rem;
+    }
+
+    
+}
 
   
 
