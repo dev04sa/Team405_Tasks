@@ -1,0 +1,100 @@
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  flex: 1 1 200px;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.categories {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categories button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  flex: 1 1 auto;
+}
+
+.categories button.active {
+  background-color: #0073e6;
+  color: white;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-item {
+  margin: 10px;
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .image-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  .categories button {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-item {
+    flex: 1 1 100%;
+  }
+
+  .categories button {
+    flex: 1 1 100%;
+  }
+
+  .input-container input {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+}
