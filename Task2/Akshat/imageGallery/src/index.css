@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width:500px){
+  .container{
+    display: contents;
+  }
+  .rounded{
+    width: 45%; 
+    margin-left:2.5%;
+    margin-bottom: 10px;
+  }
+  .image{
+    height: fit-content;
+  }
+  }
