@@ -1,0 +1,11 @@
+#nature,#film,#valentine,#animals,#people,#sports,#prev,#next{
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 1px solid #5265b7;
+    background-color: #7d8bc9;
+    color: white;
+}
+#prev,#next{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
