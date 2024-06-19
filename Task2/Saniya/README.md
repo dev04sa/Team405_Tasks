@@ -1,2 +1,0 @@
-# imageGallery
-task_2
