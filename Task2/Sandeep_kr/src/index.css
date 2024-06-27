@@ -33,7 +33,7 @@ body {
 .title {
   text-align: center;
   margin-top: var(--default-margin);
-  color: #7676d7;
+  color: #00a9f8;
 }
 
 .buttons {
@@ -60,7 +60,7 @@ body {
 }
 
 .loading {
-  color: #6565d4;
+  color: #0ce0ef;
   text-align: center;
   margin-top: 20px;
   font-size: 20px;
@@ -101,7 +101,7 @@ body {
 
 .filters > * {
   padding: 5px 10px;
-  background: #7676d7;
+  background: #050580;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
