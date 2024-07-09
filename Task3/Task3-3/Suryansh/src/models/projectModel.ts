@@ -1,10 +1,10 @@
-import mongoose, { Schema } from "mongoose";;
+import mongoose, { Schema,Document } from "mongoose";;
 
-export interface IProject{
-    title:string
-    description:string
-    link:string
-    userId:object | string  //userId of type string only for testing purposes for production only ObjectId of mongoDb
+export interface IProject extends Document{
+    title:string;
+    description:string;
+    link:string;
+    userId:object | string;  //userId of type string only for testing purposes for production only ObjectId of mongoDb
 }
 
 const projectSchema:Schema<IProject>=new mongoose.Schema({

@@ -1,9 +1,15 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose, { Schema,Document } from "mongoose";
 
-export interface IMyInfo {
-    about:string
-    contact:object
-    home:string
+export interface IMyInfo extends Document{
+    about:string;
+    contact:{
+        name:string;
+        mobileNumber:string;
+        email:string;
+        techStacks:Array<string>;
+        tools:Array<string>;
+    }
+    home:string;
 }
 
 const myInfoSchema:Schema<IMyInfo>=new mongoose.Schema({
