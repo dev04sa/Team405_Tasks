@@ -10,19 +10,19 @@ export interface IProject extends Document{
 const projectSchema:Schema<IProject>=new mongoose.Schema({
     title:{
         type:String,
-        required:true,
+        required:[true,"title is required"]
     },
     description:{
         type:String,
-        required:true
+        required:[true,"description is required"]
     },
     link:{
         type:String,
-        required:true 
+        required:[true,"link is required"]
     },
     userId:{
         type:String, //userId of type string only for testing purposes for production only ObjectId of mongoDb
-        required:true  
+        required:[true,"userId is required"] 
     }
     
 });
