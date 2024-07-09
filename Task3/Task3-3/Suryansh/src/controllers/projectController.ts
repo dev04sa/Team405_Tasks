@@ -9,10 +9,10 @@ export const getInfoByProjectId=async(req:Request,res:Response)=>{
         if(project){
             res.json(project);
         }else{
-            res.status(404).json('project not exists');
+            res.status(404).json({success:false,message:'project not exists'});
         }
     } catch (error) {
-        res.status(404).json('project not exists');
+        res.status(404).json({success:false,message:'project not exists'});
     }
 }
 
@@ -29,7 +29,7 @@ export const createProject=async(req:Request,res:Response)=>{
         await project.save();
         res.status(201).json({message:'project created successfully',data:project});
     } catch (error) {
-        res.status(404).json('failed to create project');
+        res.status(404).json({success:false,message:'failed to create project'});
     }
 }
 
@@ -46,7 +46,7 @@ export const modifyDescription=async(req:Request,res:Response)=>{
             res.status(404).json('project not found');
         }
     } catch (error) {
-        res.status(404).json('failed to update description of the project');
+        res.status(404).json({success:false,message:'failed to update description of the project'});
     }
 }
 
@@ -56,7 +56,7 @@ export const deleteProject=async(req:Request,res:Response)=>{
         await Project.findByIdAndDelete(id);
         res.json({message:"project deleted successfully"})        
      } catch (error) {
-        res.status(404).json('failed to delete the project');
+        res.status(404).json({sucess:false,message:'failed to delete the project'});
      }
 }
 
@@ -65,6 +65,6 @@ export const getProjects=async(req:Request,res:Response)=>{
     const projects:IProject[]=await Project.find();
     res.json(projects)
    } catch (error) {
-    res.status(404).json('failed to get projects');
+    res.status(404).json({success:false,message:'failed to get projects'});
    }
 }

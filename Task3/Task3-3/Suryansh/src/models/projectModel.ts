@@ -10,7 +10,7 @@ export interface IProject extends Document{
 const projectSchema:Schema<IProject>=new mongoose.Schema({
     title:{
         type:String,
-        required:true
+        required:true,
     },
     description:{
         type:String,
