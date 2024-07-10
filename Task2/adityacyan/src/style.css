@@ -1,0 +1,71 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.feed{
+  display: flex;
+}
+
+
+
+.columnUl {
+
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.li {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.img {
+
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+
+}
+
+.credit {
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #b3b3b3;
+}
+
+@media screen and (max-width: 800px) {
+  .li {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .li {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.App-header{
+
+  max-width: fit-content;
+  margin-inline: auto;
+}
+.controls{
+  display: inline-block;
+}
