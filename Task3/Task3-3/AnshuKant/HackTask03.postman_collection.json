@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "5364786f-18e7-478e-8fac-f60c940612ae",
+		"name": "HackTask03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34174631"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Third Task\",\r\n    \"description\":\"Random description about this task --- something\",\r\n    \"projectLink\":\"www.google.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/project/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"project",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get project details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/project/668a743993f8eb33f46123ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"project",
+						"668a743993f8eb33f46123ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Project",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/project/668a743993f8eb33f46123ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"project",
+						"668a743993f8eb33f46123ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Project",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"newTitle\":\"Random Title\"\r\n    ,\"newDescription\":\"Random description\"\r\n    ,\"newProjectTitle\":\"www.google.com\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/project/668a748d93f8eb33f46123d0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"project",
+						"668a748d93f8eb33f46123d0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Desc",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"newDescription\":\"new Random description for patch method\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/project/668a748d93f8eb33f46123d0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"project",
+						"668a748d93f8eb33f46123d0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
