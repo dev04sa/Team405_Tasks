@@ -70,12 +70,12 @@ router.post("/add",async (req,res)=>{
  * @route /project/:id
  * @description modify the description of the project
  */
-router.patch("/:id",(req,res)=>{
+router.patch("/:id",async(req,res)=>{
     if(req.body && !req.body.description){
         return res.status(400).json({msg:"Fill the description field"})
     }
     try{
-        const updatedProject=Projects.findByIdAndUpdate(req.params.id,{$set:{description:req.body.description}})
+        const updatedProject=await Projects.findByIdAndUpdate(req.params.id,{$set:{description:req.body.description}},{new:true})
         return res.status(200).json(updatedProject)
     }catch(err){
         if (err.message.indexOf('Cast to ObjectId failed') !== -1)

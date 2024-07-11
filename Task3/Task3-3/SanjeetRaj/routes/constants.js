@@ -18,7 +18,7 @@ router.get("/",(req,res)=>{
  * @description get info about home
  */
 router.get("/home",async (req,res)=>{
-    const home=await Constants.find({},{home})
+    const home=await Constants.find({},{home:1,_id:0})
     res.status(200).json(home)    
 })
 
@@ -29,7 +29,7 @@ router.get("/home",async (req,res)=>{
  * @description get info about "about " section
  */
 router.get("/about",async (req,res)=>{
-    const about=await Constants.find({},{about})
+    const about=await Constants.find({},{about:1,_id:0})
     res.status(200).json(about)   
 })
 
@@ -40,7 +40,7 @@ router.get("/about",async (req,res)=>{
  * @description get info about contactus
  */
 router.get("/contactus",async (req,res)=>{
-    const contactus=await Constants.find({},{contactus})
+    const contactus=await Constants.find({},{contactus:1,_id:0})
     res.status(200).json(contactus)   
 })
 
@@ -55,7 +55,7 @@ router.put("/home",async (req,res)=>{
         res.status(200).json({msg:"Fill the home field"})
     }
     try{
-        const home=await Constants.updateOne({},{$set:{home:req.body.home}})
+        const home=await Constants.updateOne({},{$set:{home:req.body.home}},{new:true})
         res.status(200).json(home)
     }catch(err){
         res.status(200).json({msg:"Some error occurred"})
@@ -73,7 +73,7 @@ router.put("/about",async (req,res)=>{
         res.status(200).json({msg:"Fill the about field"})
     }
     try{
-        const about=await Constants.updateOne({},{$set:{about:req.body.about}})
+        const about=await Constants.updateOne({},{$set:{about:req.body.about}},{new:true})
         res.status(200).json(about)
     }catch(err){
         res.status(200).json({msg:"Some error occurred"})
