@@ -1,0 +1,48 @@
+doctype html 
+html 
+    head 
+        title Projects
+        style. 
+                li{
+                    display:grid ;
+                    grid-template-columns: 200px auto ;
+                }
+                
+            
+    body
+        h1 Welcome to our Project apis
+        h3 Available routes are: 
+        ul
+            li 
+                strong Get /
+                span -to get info about routes
+            li 
+                strong Get /home
+                span -to get info about home
+            li 
+                strong Get /about
+                span -to get info about "about"
+            li 
+                strong Get /contactus
+                span -to get info about contactus
+            li 
+                strong Put /home
+                span -to replace content of home
+            li 
+                strong Put /about
+                span -to replace content of about
+            li 
+                strong Get /project
+                span -to get info about all projects
+            li 
+                strong Get /project/:id
+                span -to get info about the individual project
+            li 
+                strong Post /project/add
+                span -to add a project 
+            li 
+                strong Patch /project/:id
+                span -to modify the description of the project with given id
+            li 
+                strong Delete /project/:id
+                span -to delete the project with the given id
