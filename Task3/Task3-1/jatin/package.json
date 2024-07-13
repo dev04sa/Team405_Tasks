@@ -1,0 +1,14 @@
+{
+  "name": "jatin",
+  "version": "1.0.0",
+  "description": "This project aims to simplify and guide the way beginners make their first contribution. If you are looking to make your first contribution, follow the steps below.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
