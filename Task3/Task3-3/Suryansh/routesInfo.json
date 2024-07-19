@@ -1,0 +1,12 @@
+{
+    "info":"information about routes",
+    "GET(project/{id})":"to get info about the indivisual project (id)->(mentioned in the URL) id your project id",
+    "POST(project/{userId})":"to add a project (userId)->(mentioned in the URL) id of your user account ",
+    "PATCH(project/{id})":"to modify the description of the project",
+    "DELETE(project/{id})":"to delete a project (id)->(mentioned in the URL) id your project id ",
+    " GET(/Contact)":"to get my developer's information",
+    "GET(/home)":"  to get home text",
+    "GET(/about)":"to get about text",
+    "PUT(/about)":"to replace about text (provide in body:{'about':'about text'})",
+    "PUT(/home)":"to replace home text (provide in body:{'home':'home text'})"
+}
