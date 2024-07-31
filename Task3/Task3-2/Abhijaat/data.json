@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Netflix clone",
+            "description": "Clone of popular steaming app ",
+            "link": "http://example.com/netflixclone"
+        },
+        {
+            "id": 2,
+            "title": "Lawyer finding app",
+            "description": "A Website to connect people with their lawyers so that they can get legal help",
+            "link": "http://example.com/lawyer"
+        },
+        {
+            "id": 3,
+            "title": "Chat app",
+            "description": "An app to chat made using flutter ",
+            "link": "http://example.com/lawyer"
+        }
+    ]
+}
